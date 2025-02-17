@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		50F55F272D62A87300C88470 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F55F1C2D62A87300C88470 /* DataLayer.framework */; };
 		50F560AA2D62C62400C88470 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 50F560A92D62C62400C88470 /* Alamofire */; };
+		50F560CF2D63052C00C88470 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 50F560CE2D63052C00C88470 /* OHHTTPStubs */; };
+		50F560D12D63052C00C88470 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 50F560D02D63052C00C88470 /* OHHTTPStubsSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F560AA2D62C62400C88470 /* Alamofire in Frameworks */,
+				50F560D12D63052C00C88470 /* OHHTTPStubsSwift in Frameworks */,
+				50F560CF2D63052C00C88470 /* OHHTTPStubs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +126,8 @@
 			name = DataLayer;
 			packageProductDependencies = (
 				50F560A92D62C62400C88470 /* Alamofire */,
+				50F560CE2D63052C00C88470 /* OHHTTPStubs */,
+				50F560D02D63052C00C88470 /* OHHTTPStubsSwift */,
 			);
 			productName = DataLayer;
 			productReference = 50F55F1C2D62A87300C88470 /* DataLayer.framework */;
@@ -179,6 +185,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				50F560A82D62C62400C88470 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				50F560CD2D63052C00C88470 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 50F55F1D2D62A87300C88470 /* Products */;
@@ -494,6 +501,14 @@
 				minimumVersion = 5.10.2;
 			};
 		};
+		50F560CD2D63052C00C88470 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -501,6 +516,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 50F560A82D62C62400C88470 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		50F560CE2D63052C00C88470 /* OHHTTPStubs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50F560CD2D63052C00C88470 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubs;
+		};
+		50F560D02D63052C00C88470 /* OHHTTPStubsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50F560CD2D63052C00C88470 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubsSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

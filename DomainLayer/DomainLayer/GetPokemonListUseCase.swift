@@ -8,9 +8,9 @@
 import DataLayer
 
 public class GetPokemonListUseCase: GetPokemonListUseCaseProtocol {
-    private let repository: PokemonRepository
+    private let repository: PokemonRepositoryProtocol
     
-    public init(repository: PokemonRepository) {
+    public init(repository: PokemonRepositoryProtocol) {
         self.repository = repository
     }
     

@@ -10,8 +10,8 @@ internal import Alamofire
 
 public class PokemonRepository: PokemonRepositoryProtocol {
     
-    private let baseURL = "https://pokeapi.co/api"
-    private let version = "/v2"
+    public let baseURL = "https://pokeapi.co/api"
+    public let version = "/v2"
     private let context: NSManagedObjectContext
     
     public init() {
@@ -32,7 +32,7 @@ public class PokemonRepository: PokemonRepositoryProtocol {
         }
     }
     
-    private func savePokemonToCoreData(pokemons: [PokemonDataModel]) {
+    public func savePokemonToCoreData(pokemons: [PokemonDataModel]) {
         for pokemon in pokemons {
             let pokemonCoreData = PokemonCoreData(context: context)
             pokemonCoreData.name = pokemon.name
@@ -46,7 +46,7 @@ public class PokemonRepository: PokemonRepositoryProtocol {
         }
     }
     
-    private func fetchPokemonFromCoreData() async throws -> [PokemonDataModel] {
+    public func fetchPokemonFromCoreData() async throws -> [PokemonDataModel] {
         let fetchRequest: NSFetchRequest<PokemonCoreData> = PokemonCoreData.fetchRequest()
         let fetchedPokemons = try context.fetch(fetchRequest)
         return fetchedPokemons.map { pokemonCoreData in

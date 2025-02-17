@@ -14,7 +14,7 @@ class PokemonListViewModel: ObservableObject {
     private let getPokemonListUseCase: GetPokemonListUseCaseProtocol
     @Published var pokemons: [PokemonModel] = []
     @Published var errorMessage: String?
-    private var allPokemons: [PokemonModel] = []
+    var allPokemons: [PokemonModel] = []
     
     init(getPokemonListUseCase: GetPokemonListUseCaseProtocol) {
         self.getPokemonListUseCase = getPokemonListUseCase

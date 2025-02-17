@@ -4,7 +4,7 @@ La arquitectura de esta aplicación ha sido diseñada para ser modular y escalab
 
 ## Demo
 
-[Ver Video Demo](https://drive.google.com/file/d/13Uw3wPM6LGxSCzhS1Gulu1eYjaXkNJSz/view?usp=sharing](https://drive.google.com/file/d/1lvSD_Li2f7IWdVHf3jFkZSMdiZ3rcbTi/view?usp=sharing)
+[Ver Video Demo]([https://drive.google.com/file/d/13Uw3wPM6LGxSCzhS1Gulu1eYjaXkNJSz/view?usp=sharing](https://drive.google.com/file/d/1lvSD_Li2f7IWdVHf3jFkZSMdiZ3rcbTi/view?usp=sharing](https://drive.google.com/file/d/1lvSD_Li2f7IWdVHf3jFkZSMdiZ3rcbTi/view))
 
 ## Persistencia de Datos y Librerías Empleadas
 

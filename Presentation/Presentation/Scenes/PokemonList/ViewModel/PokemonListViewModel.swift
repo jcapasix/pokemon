@@ -9,7 +9,7 @@ import UIKit
 import Combine
 import DomainLayer
 
-class PokemonListViewModel: ObservableObject {
+class PokemonListViewModel {
     
     private let getPokemonListUseCase: GetPokemonListUseCaseProtocol
     @Published var pokemons: [PokemonModel] = []

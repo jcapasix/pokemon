@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-class PokemonDetailViewModel: ObservableObject {
+class PokemonDetailViewModel {
     @Published var pokemon: PokemonModel
     
     init(pokemon: PokemonModel) {

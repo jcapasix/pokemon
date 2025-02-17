@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		50F560992D62BF0100C88470 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F560982D62BF0100C88470 /* DomainLayer.framework */; };
+		50F5609A2D62BF0100C88470 /* DomainLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50F560982D62BF0100C88470 /* DomainLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50F560AD2D62C71600C88470 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 50F560AC2D62C71600C88470 /* SDWebImage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		50F55F852D62A8D800C88470 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,10 +29,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		50F5609B2D62BF0100C88470 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				50F5609A2D62BF0100C88470 /* DomainLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		50F55F6E2D62A8D800C88470 /* Presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Presentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F55F842D62A8D800C88470 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F55F8E2D62A8D800C88470 /* PresentationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F560982D62BF0100C88470 /* DomainLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DomainLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F560AD2D62C71600C88470 /* SDWebImage in Frameworks */,
+				50F560992D62BF0100C88470 /* DomainLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +114,7 @@
 				50F55F702D62A8D800C88470 /* Presentation */,
 				50F55F872D62A8D800C88470 /* PresentationTests */,
 				50F55F912D62A8D900C88470 /* PresentationUITests */,
+				50F560972D62BF0100C88470 /* Frameworks */,
 				50F55F6F2D62A8D800C88470 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +129,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		50F560972D62BF0100C88470 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50F560982D62BF0100C88470 /* DomainLayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +147,7 @@
 				50F55F6A2D62A8D800C88470 /* Sources */,
 				50F55F6B2D62A8D800C88470 /* Frameworks */,
 				50F55F6C2D62A8D800C88470 /* Resources */,
+				50F5609B2D62BF0100C88470 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +158,7 @@
 			);
 			name = Presentation;
 			packageProductDependencies = (
+				50F560AC2D62C71600C88470 /* SDWebImage */,
 			);
 			productName = Presentation;
 			productReference = 50F55F6E2D62A8D800C88470 /* Presentation.app */;
@@ -208,6 +242,9 @@
 			);
 			mainGroup = 50F55F652D62A8D700C88470;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				50F560AB2D62C71600C88470 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 50F55F6F2D62A8D800C88470 /* Products */;
 			projectDirPath = "";
@@ -561,6 +598,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50F560AB2D62C71600C88470 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50F560AC2D62C71600C88470 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50F560AB2D62C71600C88470 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50F55F662D62A8D700C88470 /* Project object */;
 }

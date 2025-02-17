@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		50F55F4C2D62A89000C88470 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F55F412D62A89000C88470 /* DomainLayer.framework */; };
+		50F5609E2D62BF0800C88470 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F5609D2D62BF0800C88470 /* DataLayer.framework */; };
+		50F5609F2D62BF0800C88470 /* DataLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50F5609D2D62BF0800C88470 /* DataLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,9 +22,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		50F560A02D62BF0800C88470 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				50F5609F2D62BF0800C88470 /* DataLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		50F55F412D62A89000C88470 /* DomainLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F55F4B2D62A89000C88470 /* DomainLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F5609D2D62BF0800C88470 /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F5609E2D62BF0800C88470 /* DataLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +93,7 @@
 			children = (
 				50F55F432D62A89000C88470 /* DomainLayer */,
 				50F55F4F2D62A89000C88470 /* DomainLayerTests */,
+				50F5609C2D62BF0800C88470 /* Frameworks */,
 				50F55F422D62A89000C88470 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,6 +105,14 @@
 				50F55F4B2D62A89000C88470 /* DomainLayerTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		50F5609C2D62BF0800C88470 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50F5609D2D62BF0800C88470 /* DataLayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +136,7 @@
 				50F55F3D2D62A89000C88470 /* Sources */,
 				50F55F3E2D62A89000C88470 /* Frameworks */,
 				50F55F3F2D62A89000C88470 /* Resources */,
+				50F560A02D62BF0800C88470 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

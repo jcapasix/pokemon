@@ -15,8 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
-//        let loginModule = LoginRouter.createLoginModule()
-        let loginModule = UIViewController()
+        let loginModule = PokemonFactory.makeViewController(type: .pokemonList)
         loginModule.view.backgroundColor = .systemBlue
         let navigationController = UINavigationController(rootViewController: loginModule)
         window?.rootViewController = navigationController
